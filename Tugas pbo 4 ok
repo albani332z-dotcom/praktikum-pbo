@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package Tugas_PBO4;
+
+/**
+ *
+ * @author DELL
+ */
+public class Main {
+    public static void main(String[] args) {
+        Pekerja pekerja = new Pekerja("Albani", 20, "Programmer", 5000000);
+
+        // Menampilkan informasi awal
+        pekerja.tampilkanInfo();
+
+        // Mengubah nama pekerja
+        pekerja.setNama("Albani Hafiz Innopha");
+
+        // Menampilkan informasi setelah perubahan
+        pekerja.tampilkanInfo();
+
+        // Percobaan akses langsung atribut
+        // pekerja.nama;       // Tidak bisa karena private
+        // pekerja.usia;       // Bisa karena protected
+        // pekerja.pekerjaan;  // Bisa karena public
+    }
+}
